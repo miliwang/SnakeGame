@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇游戏</title>
+    <style type="text/css">
+    body,
+    div {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        position: relative;
+    }
+
+    #map {
+        width: 90%;
+        height: 600px;
+        position: relative;
+        background: #ccc;
+        margin: 0 auto;
+    }
+
+    .item {
+        position: absolute;
+    }
+
+    .item:nth-child(2) {
+        /*border-radius: 0px 10px 10px 0;*/
+    }
+
+    .item:last-child {
+        /*border-radius:10px 0 0 10px;*/
+    }
+
+    .btn {
+        border-radius: 51%;
+        height: 55px;
+        line-height: 55px;
+        width: 55px;
+        background: red;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        bottom: -60px;
+        right: 5%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="map"></div>
+        <div class="btn">暂停</div>
+    </div>
+    <script type="text/javascript" src="script/snakeGame.js"></script>
+    <!-- <script type="text/javascript" src="lib/require.js" data-main="script/main.js"></script> -->
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
